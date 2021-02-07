@@ -15,4 +15,18 @@ const playSound = (e) => {
 
 window.addEventListener('keydown', playSound);
 
+const randomPattern = () => {
+    const patterns = [
+        ['J', 'G', 'S', 'J', 'G', 'S', 'F'], 
+        ['D', 'S', 'D', 'S', 'D', 'S', 'H'], 
+        ['G', 'G', 'J', 'G', 'G', 'J', 'H']
+    ];
+    const randomNum = Math.floor(Math.random() * (patterns.length));
+    const block = document.querySelector('blockquote');
+    pattern = patterns[randomNum].join(' ');
+    block.innerHTML = pattern;
+}
+const btn = document.querySelector('button');
+btn.addEventListener('click', randomPattern);
+
 

@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Drum Kit</title>
-    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body>
-    <div class="keys">
+    <section class='text'>
+        <h1 class="name">
+            Feel yourself a drummer!
+        </h1>
+        <blockquote class="blockquote">Try now</blockquote>
+        <button type="button" class="btn">Choose a pattern</button>
+    </section>
+    <section class='main_keys'>
         <div data-key="65" class="key">
             <kbd>A</kbd>
         <span class="sound">clap</span>
@@ -45,7 +51,7 @@
             <kbd>L</kbd>
         <span class="sound">tink</span>
         </div>
-    </div>
+    </section>
 
     <audio data-key="65" src="audio/clap.wav"></audio>
     <audio data-key="83" src="audio/hihat.wav"></audio>
@@ -56,5 +62,7 @@
     <audio data-key="74" src="audio/snare.wav"></audio>
     <audio data-key="75" src="audio/tom.wav"></audio>
     <audio data-key="76" src="audio/tink.wav"></audio>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
